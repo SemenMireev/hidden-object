@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.items{
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top: 20px;
+			background-color: lawngreen;
+			border-radius: 20px;
+			border: 2px solid darkslategray;
+		}
+		.ierog{
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top: 20px;
+			left: 250px;
+		}
+	</style>
+</head>
+<body>
+	<div style="background-image:URL(21.jpg) ;height:600px; background-size: 100% 100%; padding top:400px;">
+		<div class="items" style="left:20px; background-image:url(https://pbs.twimg.com/media/EUVT9n8WkAY5EXe.png);background-size:100% 100%;">
+		</div>
+		<div class="items" style="left:220"></div>
+		<div class="items" style="left:420"></div>
+		<div class="items" style="left:620"></div>
+		<div class="items" style="left:820">
+		<div style="background-color:lawngreen; height:300px; width:200px; border-radius: 20px;padding-top:30px; text-align: center;font-family:Arial;">
+
+		<h1 style="">Your score: <span class="showScore" style="font-size:20px;">0</span></h1>
+		</div>
+
+		<img class="ierog" src="https://media.discordapp.net/attachments/884396581552525326/959266287689826324/unknown.png">
+	</div>
+	<script type="text/javascript">
+		document.querySelector(".ierog").onclick = function(){
+			alert("1")
+			document.querySelector(".ierog").style.display = "none"
+			score = score + 1;
+			document.querySelector(".showScore").innerHTML = score;
+		}
+	</script>
+	</div>
+</body>
+</html>
